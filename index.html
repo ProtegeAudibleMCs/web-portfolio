@@ -12,13 +12,38 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Loren Thomas V. Dacasin</a>
+            <a href="#" class="nav-logo">My Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#certificates" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/ProtegeAudibleMCs/" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:ltvdacasin@gmail.com" class="social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/loren.dacasin/" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                </li>
                 <li><button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
                     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -162,10 +187,16 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/cleartrack.png" alt="ClearTrack">
+                        <button class="view-project-btn" data-project="cleartrack" data-title="ClearTrack: Employee Management and Attendance based Payroll System" data-description="Developed and formulated the overall user interface and the dashboards which are very critical to the company's operations in Employee and Payroll Management. This system handles employee records, attendance tracking, and payroll processing for Teresa Water District." data-image="./assets/images/cleartrack.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-content">
-                        <h3>ClearTrack</h3>
-                        <p>An Integrated Employee Records and Payroll Management Solution for Teresa Water District, designed to streamline HR operations and payroll processing.</p>
+                        <h3>ClearTrack: Employee Management and Attendance based Payroll System</h3>
+                        <p>Developed and formulated the overall user interface and the dashboards which are very critical to the company's operations in Employee and Payroll Management.</p>
                         <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -178,6 +209,12 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/dreampcbuildanditsolutions.png" alt="Dream PC Build">
+                        <button class="view-project-btn" data-project="dreampc" data-title="Dream PC Build & IT Solutions" data-description="Redesigned and developed the website for Dream PC Build & IT Solutions (such as putting a 3D model of their logo in the homepage), improving the overall user experience and showcasing their PC building services and IT solutions offerings." data-image="./assets/images/dreampcbuildanditsolutions.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-content">
                         <h3>Dream PC Build & IT Solutions</h3>
@@ -187,11 +224,20 @@
                             <span class="tag">CSS</span>
                             <span class="tag">JavaScript</span>
                         </div>
+                        <div class="project-buttons">
+                            <a href="https://dreampcbuild.com/" target="_blank" class="visit-site-btn">Visit Website</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
                         <img src="./assets/images/photonergyinc.png" alt="Photonergy Inc.">
+                        <button class="view-project-btn" data-project="photonergy" data-title="Photonergy Inc." data-description="Redesigned and reconstructed a corporate website via WordPress and Elementor to ensure content originality; designed the homepage and integrated product listings to improve company branding for this renewable energy company." data-image="./assets/images/photonergyinc.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-content">
                         <h3>Photonergy Inc.</h3>
@@ -200,19 +246,52 @@
                             <span class="tag">WordPress</span>
                             <span class="tag">Elementor</span>
                         </div>
+                        <div class="project-buttons">
+                            <a href="https://photonergy.com.ph/" target="_blank" class="visit-site-btn">Visit Website</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="Project Image" class="modal-image">
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-certificate-modal">&times;</span>
+            <img id="certificateModalImage" src="" alt="Certificate Image" class="modal-image">
+            <div class="modal-details">
+                <h2 id="certificateModalTitle"></h2>
+                <p id="certificateModalDescription"></p>
+            </div>
+        </div>
+    </div>
+
     <section class="certificates" id="certificates">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certificates</h2>
             <div class="certificates-grid">
                 <div class="certificate-card">
                     <div class="certificate-image">
                         <img src="./assets/images/google-ai-professional.png" alt="Google AI Professional Certificate">
+                        <button class="view-certificate-btn" data-certificate="google-ai-professional" data-title="Google AI Professional" data-description="Professional certification in artificial intelligence concepts, applications, and best practices for AI implementation in business solutions." data-image="./assets/images/google-ai-professional.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <h3>Google AI Professional</h3>
                     <p>Professional certification in artificial intelligence concepts, applications, and best practices for AI implementation in business solutions.</p>
@@ -220,6 +299,12 @@
                 <div class="certificate-card">
                     <div class="certificate-image">
                         <img src="./assets/images/google-ai-essentials.png" alt="Google AI Essentials Certificate">
+                        <button class="view-certificate-btn" data-certificate="google-ai-essentials" data-title="Google AI Essentials" data-description="Foundational knowledge of AI principles, machine learning basics, and Google's AI tools and platforms for practical applications." data-image="./assets/images/google-ai-essentials.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <h3>Google AI Essentials</h3>
                     <p>Foundational knowledge of AI principles, machine learning basics, and Google's AI tools and platforms for practical applications.</p>
@@ -227,6 +312,12 @@
                 <div class="certificate-card">
                     <div class="certificate-image">
                         <img src="./assets/images/google-prompting-essentials.png" alt="Google Prompting Essentials Certificate">
+                        <button class="view-certificate-btn" data-certificate="google-prompting-essentials" data-title="Google Prompting Essentials" data-description="Specialized training in effective prompt engineering techniques to optimize AI interactions and improve AI-generated outputs." data-image="./assets/images/google-prompting-essentials.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <h3>Google Prompting Essentials</h3>
                     <p>Specialized training in effective prompt engineering techniques to optimize AI interactions and improve AI-generated outputs.</p>
@@ -234,6 +325,12 @@
                 <div class="certificate-card">
                     <div class="certificate-image">
                         <img src="./assets/images/ai-for-app-building.png" alt="AI for App Building Certificate">
+                        <button class="view-certificate-btn" data-certificate="ai-for-app-building" data-title="AI for App Building" data-description="Learned to integrate AI capabilities into application development, leveraging AI tools to enhance app functionality and user experience." data-image="./assets/images/ai-for-app-building.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <h3>AI for App Building</h3>
                     <p>Learned to integrate AI capabilities into application development, leveraging AI tools to enhance app functionality and user experience.</p>
@@ -241,9 +338,41 @@
                 <div class="certificate-card">
                     <div class="certificate-image">
                         <img src="./assets/images/bits-and-bytes-of-computer-networking.png" alt="The Bits and Bytes of Computer Networking Certificate">
+                        <button class="view-certificate-btn" data-certificate="bits-and-bytes" data-title="The Bits and Bytes of Computer Networking" data-description="Comprehensive understanding of computer networking fundamentals, including protocols, network architecture, and data transmission principles." data-image="./assets/images/bits-and-bytes-of-computer-networking.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
                     </div>
                     <h3>The Bits and Bytes of Computer Networking</h3>
                     <p>Comprehensive understanding of computer networking fundamentals, including protocols, network architecture, and data transmission principles.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./assets/images/internship-dreampc.png" alt="Dream PC Build & IT Solutions Internship Certificate">
+                        <button class="view-certificate-btn" data-certificate="internship-dreampc" data-title="Internship Completion - Dream PC Build & IT Solutions" data-description="Certificate of Completion for internship at Dream PC Build & IT Solutions, gaining practical experience in web development and IT solutions." data-image="./assets/images/internship-dreampc.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Internship Completion</h3>
+                    <p>Certificate of Completion for internship at Dream PC Build & IT Solutions, gaining practical experience in web development and IT solutions.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./assets/images/internship-photonergy.png" alt="Photonergy Inc. Internship Certificate">
+                        <button class="view-certificate-btn" data-certificate="internship-photonergy" data-title="Internship Completion - Photonergy Inc." data-description="Certificate of Completion for internship at Photonergy Inc., gaining hands-on experience in WordPress development and corporate website management." data-image="./assets/images/internship-photonergy.png">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3>Internship Completion</h3>
+                    <p>Certificate of Completion for internship at Photonergy Inc., gaining hands-on experience in WordPress development and corporate website management.</p>
                 </div>
             </div>
         </div>

@@ -2,11 +2,12 @@
 const darkModeToggle = document.getElementById('darkModeToggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to light mode
+// Check for saved theme preference or default to dark mode
 const savedTheme = localStorage.getItem('theme');
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+if (savedTheme === 'light') {
+    html.setAttribute('data-theme', 'light');
+} else {
     html.setAttribute('data-theme', 'dark');
 }
 
@@ -107,5 +108,97 @@ window.addEventListener('load', () => {
     if (heroTitle) {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 80);
+    }
+});
+
+// Project Modal Functionality
+const projectModal = document.getElementById('projectModal');
+const modalImage = document.getElementById('modalImage');
+const modalTitle = document.getElementById('modalTitle');
+const modalDescription = document.getElementById('modalDescription');
+const closeModalBtn = document.querySelector('.close-modal');
+const viewProjectBtns = document.querySelectorAll('.view-project-btn');
+
+// Open modal when view project button is clicked
+viewProjectBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-title');
+        const description = btn.getAttribute('data-description');
+        const image = btn.getAttribute('data-image');
+
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        modalImage.src = image;
+
+        projectModal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+});
+
+// Close modal when close button is clicked
+closeModalBtn.addEventListener('click', () => {
+    projectModal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+});
+
+// Close modal when clicking outside the modal content
+projectModal.addEventListener('click', (e) => {
+    if (e.target === projectModal) {
+        projectModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && projectModal.style.display === 'block') {
+        projectModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Certificate Modal Functionality
+const certificateModal = document.getElementById('certificateModal');
+const certificateModalImage = document.getElementById('certificateModalImage');
+const certificateModalTitle = document.getElementById('certificateModalTitle');
+const certificateModalDescription = document.getElementById('certificateModalDescription');
+const closeCertificateModalBtn = document.querySelector('.close-certificate-modal');
+const viewCertificateBtns = document.querySelectorAll('.view-certificate-btn');
+
+// Open modal when view certificate button is clicked
+viewCertificateBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-title');
+        const description = btn.getAttribute('data-description');
+        const image = btn.getAttribute('data-image');
+
+        certificateModalTitle.textContent = title;
+        certificateModalDescription.textContent = description;
+        certificateModalImage.src = image;
+
+        certificateModal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+});
+
+// Close modal when close button is clicked
+closeCertificateModalBtn.addEventListener('click', () => {
+    certificateModal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+});
+
+// Close modal when clicking outside the modal content
+certificateModal.addEventListener('click', (e) => {
+    if (e.target === certificateModal) {
+        certificateModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Close certificate modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certificateModal.style.display === 'block') {
+        certificateModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
     }
 });
